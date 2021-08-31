@@ -5,16 +5,16 @@
 *
 * Return: Always 0 (Success)
 */
-
 int main(void)
 {
-	int i;
-	char p[] = "Holberton";
+	char *sh = "Holberton";
 
-	for (i = 0; i < 9; i++)
-		{
-		_putchar(p[i]);
-		}
-		_putchar('\n');
+	while (*sh)
+	{
+		_putchar(*sh);
+		sh++;
+	}
+	_putchar('\n');
+
 	return (0);
 }
