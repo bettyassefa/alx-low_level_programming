@@ -1,28 +1,30 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+
 /**
- * main - check the code for Holberton School students.
+ * main - entry point in c
  *
- * Return: Always 0.
+ * Return: 0 if successful
  */
+
 int main(void)
 {
-char seed[50] = "Tada! Congrats";
-char password[22];
-int i, n, passw, complem;
+	char c = 0;
+	int sum = 0;
+	char last = 0;
 
-srand(time(0));
+	srand(time(0));
 
-for (i = 0; passw < 2772; i++)
-{
-n = rand() % 10;
-password[i] = seed[n];
-passw += password[i];
-}
-complem = 2772 - passw;
-password[i] = complem;
-printf("%s\n",  password);
-return (0);
+	while (sum <= 2645)
+	{
+		c = rand() % 128;
+		sum += c;
+		putchar(c);
+	}
+
+	last = 2772 - sum;
+	putchar(last);
+
+	return (0);
 }
