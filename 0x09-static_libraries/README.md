@@ -1,0 +1,1 @@
+# This is for project 0x09-static_libraries
